@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: "Chance",
+   age: 21
+};
+me.name;
 
 
 ////////// PROBLEM 2 //////////
@@ -26,6 +30,14 @@
 */
 
 //Code here
+favoriteThings = {
+  band: "The Tech Thieves",
+  food: "Chinese BBQ Pork",
+  person: "Payton",
+  book: "The Way Of Kings",
+  movie: "The Lord of the Rings Trilogy",
+  holiday: "SPOOKTOBER"
+};
 
 
 
@@ -34,6 +46,8 @@
 */
 
 //Code here
+favoriteThings.car = "ZR1 Corvette";
+favoriteThings.brand = "A&E";
 
 
 
@@ -42,6 +56,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -56,6 +72,13 @@
 */
 
 //Code here
+var backPack = {};
+var item = "firstPocket";
+backPack[item] = 'chapstick';
+backPack.color = "Gray";
+
+
+
 
 
 
@@ -74,6 +97,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack);
 
 
 
@@ -97,7 +121,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,6 +145,7 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {}
 
 
 
@@ -127,6 +153,12 @@ var user2 = {
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
+methodCollection.alertHello = function alertHello(){
+  alert("hello");
+}
+methodCollection.logHello = function logHello(){
+  console.log("hello")
+}
 
 //Code Here
 
@@ -137,7 +169,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,6 +181,13 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name, birthday, ssn){
+  return person1 = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn,
+  }
+}
 
 
 
@@ -157,6 +197,15 @@ var user2 = {
   Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
+function makeCard(cardNumber, expirationDate, securityCode)
+{
+  var newCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return newCard;
+}
 
 //Code Here
 
